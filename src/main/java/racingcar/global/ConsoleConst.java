@@ -5,7 +5,7 @@ public enum ConsoleConst {
     INPUT_GAME_ROUNDS("시도할 회수는 몇회인가요?"),
     ERROR_GAME_ROUNDS_NOT_NUMBERS("시도 횟수는 숫자이어야 합니다."),
     OUTPUT_GAME_REPORT("실행 결과"),
-    OUTPUT_WINNERS("최종 우승자는 %s 입니다.");
+    OUTPUT_WINNERS("최종 우승자 : %s");
 
 
     private final String contents;
