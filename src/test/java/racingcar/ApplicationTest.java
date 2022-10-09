@@ -1,7 +1,6 @@
 package racingcar;
 
 import camp.nextstep.edu.missionutils.test.NsTest;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static camp.nextstep.edu.missionutils.test.Assertions.assertRandomNumberInRangeTest;
@@ -30,17 +29,6 @@ class ApplicationTest extends NsTest {
         assertSimpleTest(
                 () -> {
                     runException("pobi,javaji");
-                    assertThat(output()).contains(ERROR_MESSAGE);
-                }
-        );
-    }
-
-    @Test
-    @DisplayName("시도 횟수에 대한 예외 처리")
-    void input_game_rounds_test() {
-        assertSimpleTest(
-                () -> {
-                    runException("pobi,java", "1z");
                     assertThat(output()).contains(ERROR_MESSAGE);
                 }
         );
